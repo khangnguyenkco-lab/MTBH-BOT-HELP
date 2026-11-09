@@ -41,9 +41,9 @@ else:
                 """
                 try:
                   response = client.models.generate_content(
-    model="gemini-2.5-flash",
-    contents=prompt,
-)
+                 model="gemini-2.5-flash",
+                 contents=prompt,
+                      )
                     st.success("Kết quả từ trợ lý AI:")
                     st.write(response.text)
                 except Exception as e:
